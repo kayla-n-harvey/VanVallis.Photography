@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Van Vallis Photography</title>
+    <style>
+        :root {
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+            --accent: #d4af37;
+        }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; color: var(--dark); }
+        header { background: var(--dark); color: white; padding: 3rem 0; text-align: center; }
+        nav { background: #f8f8f8; padding: 1rem; text-align: center; position: sticky; top: 0; border-bottom: 1px solid #ddd; z-index: 1000; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--dark); font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        nav a:hover { color: var(--accent); }
+        
+        section { padding: 4rem 10%; max-width: 1200px; margin: auto; }
+        h2 { border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 2rem; }
+        
+        /* Pricing Grid */
+        .pricing-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            margin-top: 2rem;
+        }
+        .price-box { 
+            border: 1px solid #ddd; 
+            padding: 3rem 2rem; 
+            text-align: center; 
+            transition: 0.3s;
+            border-radius: 8px;
+        }
+        .price-box:hover { 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+        .price { font-size: 2.5rem; font-weight: bold; color: var(--accent); margin: 1rem 0; }
+        .package-features { list-style: none; padding: 0; margin: 2rem 0; text-align: left; display: inline-block; }
+        .package-features li { margin-bottom: 10px; }
+        .package-features li::before { content: "✓ "; color: var(--accent); font-weight: bold; }
+        
+        .btn { background: var(--dark); color: white; padding: 12px 25px; text-decoration: none; display: inline-block; border-radius: 4px; font-weight: bold; }
+        .btn:hover { background: var(--accent); color: var(--dark); }
 
+        .extra-info { margin-top: 4rem; background: #fdfdfd; padding: 2rem; border-radius: 8px; border: 1px dashed #ccc; }
+
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VAN VALLIS PHOTOGRAPHY</h1>
+        <p>Investment & Packages</p>
+    </header>
+
+    <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Choose Your Session</h2>
+        <p>Every session is handled with care to ensure your special moments are preserved forever.</p>
+
+        <div class="pricing-container">
+            <div class="price-box">
+                <h3>Mini Session</h3>
+                <p class="price">$50</p>
+                <ul class="package-features">
+                    <li>30-minute session</li>
+                    <li>10 professionally edited photos</li>
+                    <li>Online digital gallery</li>
+                    <li>Personal use print release</li>
+                </ul>
+                <br>
+                <a href="contact.html" class="btn">Book Mini Session</a>
+            </div>
+
+            <div class="price-box">
+                <h3>Full Session</h3>
+                <p class="price">$100</p>
+                <ul class="package-features">
+                    <li>60-minute session</li>
+                    <li>25 professionally edited photos</li>
+                    <li>Online digital gallery</li>
+                    <li>Personal use print release</li>
+                    <li>Outfit change allowed</li>
+                </ul>
+                <br>
+                <a href="contact.html" class="btn">Book Full Session</a>
+            </div>
+        </div>
+
+        <div class="extra-info">
+            <h3>Good to Know</h3>
+            <p>• A small travel fee may apply for locations more than 20 miles outside of my local area.</p>
+            <p>• Turnaround time for your edited gallery is typically 1-2 weeks.</p>
+            <p>• Need something custom? I'm happy to chat about your specific vision!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Van Vallis Photography</p>
+    </footer>
+</body>
+</html>
