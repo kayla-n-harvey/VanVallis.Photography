@@ -1,1 +1,185 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Portfolio</title>
+    <style>
+        :root {
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+            --accent: #d4af37; /* Gold accent */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--dark);
+            background: #fff;
+        }
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #f8f8f8;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        section {
+            padding: 4rem 10%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        /* Portfolio Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            background: #eee;
+            aspect-ratio: 3/2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Pricing Table */
+        .pricing-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .price-box {
+            border: 1px solid #ddd;
+            padding: 2rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .price-box:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        .btn {
+            background: var(--dark);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>YOUR NAME PHOTOGRAPHY</h1>
+        <p>Capturing life's most precious moments</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm [Your Name]! I'm a [City]-based photographer specializing in [Portrait/Wedding/Nature] photography.</p>
+        <p>I started photography because [Your Story]. When I'm not behind the lens, you can find me [Fun Fact].</p>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <!-- IMPORTANT: Replace 'photo1.jpg' with your actual file names uploaded to GitHub -->
+            <div class="gallery-item"><img src="photo1.jpg" alt="Description of photo"></div>
+            <div class="gallery-item"><img src="photo2.jpg" alt="Description of photo"></div>
+            <div class="gallery-item"><img src="photo3.jpg" alt="Description of photo"></div>
+            <div class="gallery-item"><img src="photo4.jpg" alt="Description of photo"></div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing">
+        <h2>Pricing & Packages</h2>
+        <div class="pricing-container">
+            <div class="price-box">
+                <h3>Mini Session</h3>
+                <p class="price">$150</p>
+                <p>30 Minutes<br>10 Edited Photos<br>Online Gallery</p>
+                <a href="#contact" class="btn">Book Now</a>
+            </div>
+            <div class="price-box">
+                <h3>Full Session</h3>
+                <p class="price">$300</p>
+                <p>60 Minutes<br>25 Edited Photos<br>Print Release</p>
+                <a href="#contact" class="btn">Book Now</a>
+            </div>
+            <div class="price-box">
+                <h3>Events</h3>
+                <p class="price">$500+</p>
+                <p>3 Hours Coverage<br>All Best Photos<br>Custom USB</p>
+                <a href="#contact" class="btn">Enquire</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Ready to book a session? Email me at: <strong>your-email@example.com</strong></p>
+        <p>Follow my journey on Instagram: <a href="#">@YourUsername</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name Photography. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
