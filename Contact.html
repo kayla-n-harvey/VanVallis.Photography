@@ -51,6 +51,85 @@
             <p><strong>Socials:</strong> @Vanvallis.photography</p>
         </div>
     </section>
+    <section><div class="form-container">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xwvagwkk" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="contact-method">Preferred Contact Method</label>
+        <select id="contact-method" name="contact-method">
+            <option value="email">Email</option>
+            <option value="phone">Phone Call</option>
+            <option value="text">Text Message</option>
+        </select>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="How can I help you?" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}</section>
 
     <footer>
         <p>&copy; 2026 Van Vallis Photography</p>
